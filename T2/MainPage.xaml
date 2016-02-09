@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="T2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="736,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="1,0.25" TextChanged="Amount_TextChanged"/>
+        <TextBlock x:Name="Info" HorizontalAlignment="Left" Margin="926,194,0,0" TextWrapping="Wrap" Text="Change your currency" VerticalAlignment="Top" SelectionChanged="Info_SelectionChanged" Height="18" Width="161"/>
+        <Button x:Name="Euro" Content="Euro" HorizontalAlignment="Left" Margin="1036,240,0,0" VerticalAlignment="Top" Click="Euro_Click"/>
+        <TextBlock x:Name="CurrentC" HorizontalAlignment="Left" Margin="736,194,0,0" TextWrapping="Wrap" Text="Muunnin" VerticalAlignment="Top" SelectionChanged="CurrentC_SelectionChanged"/>
+        <Button x:Name="Markka" Content="Markka" HorizontalAlignment="Left" Margin="926,240,0,0" VerticalAlignment="Top" Click="Markka_Click"/>
+        <Button x:Name="Muunnin" Content="Muunna" HorizontalAlignment="Left" Margin="736,60,0,0" VerticalAlignment="Top" Height="86" Width="351" ClickMode="Press" FontSize="32" Click="Muunnin_Click"/>
+
+    </Grid>
+</Page>
